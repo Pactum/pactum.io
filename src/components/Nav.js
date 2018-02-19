@@ -36,7 +36,7 @@ export default class NavBar extends React.Component {
         <header>
           <Navbar color="faded" light expand="md">
             <div className="row">
-              <div className="col-4">
+              <div className="col-4 moveLogo">
                 <NavbarBrand>
                   <img src={NavLogo} alt="Nav Logo" />
                 </NavbarBrand>
@@ -48,7 +48,7 @@ export default class NavBar extends React.Component {
                   target="_blank"
                 >
                   <img
-                    className="social-icon"
+                    className="social-icon moveIcons"
                     alt="Twitter Icon"
                     src={twitter}
                   />
@@ -59,7 +59,7 @@ export default class NavBar extends React.Component {
                   target="_blank"
                 >
                   <img
-                    className="social-icon"
+                    className="social-icon moveIcons1"
                     alt="Facebook Icon"
                     src={facebook}
                   />
@@ -70,7 +70,7 @@ export default class NavBar extends React.Component {
                   target="_blank"
                 >
                   <img
-                    className="social-icon"
+                    className="social-icon  moveIcons2"
                     alt="Discord Icon"
                     src={discord}
                   />
@@ -80,10 +80,18 @@ export default class NavBar extends React.Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <img className="social-icon" alt="Medium Icon" src={medium} />
+                  <img
+                    className="social-icon  moveIcons3"
+                    alt="Medium Icon"
+                    src={medium}
+                  />
                 </a>
                 <a href="mailto:pact@pactum.io">
-                  <img className="social-icon" alt="Email Icon" src={Email} />
+                  <img
+                    className="social-icon moveIcons4"
+                    alt="Email Icon"
+                    src={Email}
+                  />
                 </a>
               </div>
             </div>

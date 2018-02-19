@@ -18,11 +18,11 @@ const Main = props => {
       <Jumbotron fluid name="home">
         <Container fluid>
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-12">
               <span className="title"> Make a Pact with Pactum! </span>
             </div>
-            <div className="col-md-4">
-              <img alt="Pactum Logo" width="60%" src={PactumBig} />
+            <div className="fixed-position-logo">
+              <img alt="Pactum Logo" width="100%" src={PactumBig} />
             </div>
           </div>
           <div className="row">
