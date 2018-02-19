@@ -10,9 +10,9 @@ export default class About extends React.Component {
           </div>
         </div>
         <section>
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
-              <div className="col-4">
+              <div className="col-md-4">
                 <div>
                   <div className="icon text-center">
                     <i className="icon-tools2" />
@@ -26,7 +26,7 @@ export default class About extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-md-4">
                 <div>
                   <div className="icon text-center">
                     <i className="icon-desktop" />
@@ -40,7 +40,7 @@ export default class About extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-md-4">
                 <div>
                   <div className="icon text-center">
                     <i className="icon-lightbulb" />

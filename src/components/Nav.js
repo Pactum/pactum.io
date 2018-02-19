@@ -32,7 +32,7 @@ export default class NavBar extends React.Component {
   }
   render() {
     return (
-      <Sticky topOffset={400}>
+      <Sticky topOffset={-1}>
         <header>
           <Navbar color="faded" light expand="md">
             <div className="row">
@@ -89,7 +89,7 @@ export default class NavBar extends React.Component {
             </div>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav className="ml-auto nav-font" navbar>
                 <NavItem>
                   <NavLink>
                     <Link

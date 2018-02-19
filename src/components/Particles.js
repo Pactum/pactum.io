@@ -96,7 +96,7 @@ export default class ParticlesJS extends React.Component {
                 }
               },
               bubble: {
-                distance: 400,
+                distance: 200,
                 size: 40,
                 duration: 2,
                 opacity: 8,
@@ -115,10 +115,6 @@ export default class ParticlesJS extends React.Component {
             }
           },
           retina_detect: true
-        }}
-        style={{
-          width: '100%',
-          backgroundImage: ``
         }}
       />
     );

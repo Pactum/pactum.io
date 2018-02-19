@@ -34,6 +34,7 @@ export default class SCT extends React.Component {
             </CardBody>
           </Card>
         </Collapse>
+        <br />
       </div>
     );
   }
