@@ -36,6 +36,7 @@ const Main = props => {
           </div>
         </Container>
       </Jumbotron>
+      <div className="emptyspace">&nbsp;</div>
       <Container fluid>
         <div className="row col-centered">
           <div className="col-md-4">
@@ -49,6 +50,7 @@ const Main = props => {
           </div>
         </div>
       </Container>
+      <br />
       {/* <Particles /> */}
       <Community />
       <About />

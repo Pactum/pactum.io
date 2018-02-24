@@ -7,6 +7,7 @@ import rich from '../images/team/rich.jpg';
 import patrick from '../images/team/patrick.jpg';
 import james from '../images/team/james.jpg';
 import navlogo3 from '../images/nav-logo3.png';
+import transP from '../images/TransPLogo.png';
 import { SocialIcon } from 'react-social-icons';
 
 export default class Team extends React.Component {
@@ -86,7 +87,12 @@ export default class Team extends React.Component {
           <div className="row col-centered">
             <div className="col-md-4 px-4 mb-5">&nbsp;</div>
             <div className="col-md-4 px-4 mb-5">
-              <img className="mb-1" alt="Pactum Small Logo" src={navlogo3} />
+              <img
+                className="mb-1"
+                width="40%"
+                alt="Pactum Small Logo"
+                src={transP}
+              />
               <p> Coming soon... </p>
             </div>
             <div className="col-md-4 px-4 mb-5">&nbsp;</div>

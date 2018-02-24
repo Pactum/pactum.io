@@ -35,6 +35,7 @@ export default class SCC extends React.Component {
             </CardBody>
           </Card>
         </Collapse>
+        <br />
       </div>
     );
   }

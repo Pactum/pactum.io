@@ -31,8 +31,35 @@
   color: #98c740;
 }
 
+.padTop {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1999px) {
+  .emptyspace {
+    height: 150px;
+  }
+}
+
 .clear-background {
   background-color: rgba(000, 000, 000, 0.1);
+}
+.pactGreen {
+  color: #98c740;
+}
+
+.grayBG {
+  background-color: #314045;
 }
 
 .fixed-position-logo {

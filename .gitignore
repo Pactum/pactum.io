@@ -17,6 +17,7 @@
 .env.production.local
 
 # css built files
+# src/**/*.css
 
 npm-debug.log*
 yarn-debug.log*
