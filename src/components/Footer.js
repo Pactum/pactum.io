@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div id="footer" name="footer">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row col-centered">
             <div className="col-md-2">
               <ul className="list-unstyled" />

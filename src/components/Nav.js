@@ -34,7 +34,7 @@ export default class NavBar extends React.Component {
     return (
       <Sticky topOffset={-1}>
         <header>
-          <Navbar color="faded" light expand="md">
+          <Navbar color="faded" light expand="lg">
             <div className="row">
               <div className="col-4 moveLogo">
                 <NavbarBrand>
@@ -86,13 +86,13 @@ export default class NavBar extends React.Component {
                     src={medium}
                   />
                 </a>
-                <a href="mailto:pact@pactum.io">
+                {/* <a href="mailto:pact@pactum.io">
                   <img
                     className="social-icon moveIcons4"
                     alt="Email Icon"
                     src={Email}
                   />
-                </a>
+                </a> */}
               </div>
             </div>
             <NavbarToggler onClick={this.toggle} />
@@ -108,6 +108,21 @@ export default class NavBar extends React.Component {
                       duration={500}
                     >
                       Home
+                    </Link>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink>
+                    <Link
+                      activeClass="active"
+                      to="community"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                      onSetActive={this.handleSetActive}
+                    >
+                      Community
                     </Link>
                   </NavLink>
                 </NavItem>

@@ -17,7 +17,8 @@ export default class CSC extends React.Component {
       <div>
         <div>
           <Button
-            color="primary"
+            size="lg"
+            color="success"
             onClick={this.toggle}
             style={{ marginBottom: '1rem' }}
           >
