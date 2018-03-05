@@ -51,12 +51,7 @@ export default class Team extends React.Component {
 
           <div className="row col-centered">
             <div className="col-md-4 px-4 mb-5">
-              <img className="mb-1" alt="James" src={james} />
-              <p>
-                <strong>James Piercy</strong> <br />
-                Senior UX Designer
-              </p>
-              <SocialIcon url="https://www.linkedin.com/in/james-piercy-13526559/" />
+              <img className="mb-1" alt="Pactum Logo" src={transP} />
             </div>
             <div className="col-md-4 px-4 mb-5">
               <img className="mb-1" alt="Patrick" src={patrick} />
