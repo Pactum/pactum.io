@@ -7,6 +7,7 @@ import discord from '../images/social/discord.png';
 import medium from '../images/social/medium-icon.png';
 import reddit from '../images/social/reddit.png';
 import linkedin from '../images/social/linkedin.png';
+import pactumTOS from '../downloads/PactumTOS.pdf';
 
 export default class Footer extends React.Component {
   render() {
@@ -131,7 +132,9 @@ export default class Footer extends React.Component {
                 <li>
                   <h6 className="text-uppercase">Legal</h6>
                 </li>
-                <li>Terms</li>
+                <li>
+                  <a href={pactumTOS}>Terms of Service</a>
+                </li>
                 <li>Legal</li>
                 <li>Privacy</li>
                 <li>License</li>
