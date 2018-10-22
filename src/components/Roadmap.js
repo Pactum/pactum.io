@@ -35,15 +35,15 @@ export default class Roadmap extends React.Component {
                 <li className="m-b-lg">
                   <p className="featured-list-icon-text m-b-0 text-primary">
                     <Icon name="cog" spin size="2x" /> &nbsp;<strong>
-                      Q1 2018
+                      Q1-Q3 2018
                     </strong>
                   </p>
                   <Progress multi>
-                    <Progress bar color="success" value="40" />
+                    <Progress bar color="success" value="100" />
                   </Progress>
                   <p className="featured-list-icon-text">Closed Beta Build</p>
                   <Progress multi>
-                    <Progress bar color="success" value="60" />
+                    <Progress bar color="success" value="75" />
                   </Progress>
                   <p className="featured-list-icon-text">
                     Development Plan Release
@@ -53,33 +53,14 @@ export default class Roadmap extends React.Component {
                 <li className="m-b-lg">
                   <p className="featured-list-icon-text m-b-0 text-primary">
                     <Icon name="cogs" size="2x" /> &nbsp;{' '}
-                    <strong>Q2 2018</strong>
+                    <strong>Q4 2018</strong>
                   </p>
                   <Progress multi>
-                    <Progress bar color="success" value="10" />
+                    <Progress bar color="success" value="40" />
                   </Progress>
                   <p className="featured-list-icon-text">
                     Open Beta Build & Prep
                   </p>
-                  <Progress multi>
-                    <Progress bar color="success" value="30" />
-                  </Progress>
-                  <p className="featured-list-icon-text">Crowdsale Prep</p>
-                </li>
-
-                <li className="m-b-lg">
-                  <p className="featured-list-icon-text m-b-0 text-primary">
-                    <Icon name="line-chart" size="2x" /> &nbsp;{' '}
-                    <strong>Q3 2018</strong>
-                  </p>
-                  <Progress multi>
-                    <Progress bar color="success" value="0" />
-                  </Progress>
-                  <p className="featured-list-icon-text">Open Beta Release</p>
-                  <Progress multi>
-                    <Progress bar color="success" value="0" />
-                  </Progress>
-                  <p className="featured-list-icon-text">Crowdsale Launch</p>
                 </li>
               </ul>
             </div>
@@ -88,8 +69,12 @@ export default class Roadmap extends React.Component {
                 <li className="m-b-lg">
                   <p className="featured-list-icon-text m-b-0 text-primary">
                     <Icon name="cogs" spin size="2x" /> &nbsp;{' '}
-                    <strong>Q4 2018</strong>
+                    <strong>Q1-Q2 2019</strong>
                   </p>
+                  <Progress multi>
+                    <Progress bar color="success" value="5" />
+                  </Progress>
+                  <p className="featured-list-icon-text">Open Beta Release</p>
                   <Progress multi>
                     <Progress bar color="success" value="0" />
                   </Progress>
@@ -108,7 +93,7 @@ export default class Roadmap extends React.Component {
                   <p className="featured-list-icon-text m-b-0 text-primary">
                     <Icon name="cog" pulse size="2x" />
                     <Icon name="cogs" size="2x" /> &nbsp;{' '}
-                    <strong>Q1 2019</strong>
+                    <strong>Q3 2019</strong>
                   </p>
                   <Progress multi>
                     <Progress bar color="success" value="0" />
@@ -128,7 +113,7 @@ export default class Roadmap extends React.Component {
                   <p className="featured-list-icon-text m-b-0 text-primary">
                     <Icon name="cog" spin size="2x" />
                     <Icon name="cogs" spin size="2x" /> &nbsp;{' '}
-                    <strong>Q2 2019</strong>
+                    <strong>Q4 2019</strong>
                   </p>
                   <Progress multi>
                     <Progress bar color="success" value="0" />
@@ -145,7 +130,7 @@ export default class Roadmap extends React.Component {
                 <li className="m-b-lg">
                   <p className="featured-list-icon-text m-b-0 text-primary">
                     <Icon name="handshake-o" size="2x" /> &nbsp;{' '}
-                    <strong>Q3 2019</strong>
+                    <strong>Q1 2020</strong>
                   </p>
                   <Progress multi>
                     <Progress bar color="success" value="0" />
