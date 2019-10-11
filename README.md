@@ -1,5 +1,7 @@
 # Pactum IO's Offical Website Build
 
+[![Build Status](https://travis-ci.org/Pactum/pactum.io.svg?branch=master)](https://travis-ci.org/Pactum/pactum.io)
+
 ## Folder Structure
 
 After creation, your project should look like this:
