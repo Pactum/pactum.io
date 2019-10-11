@@ -3,10 +3,10 @@ node_js:
   - 12
 
 after_success:
-  #- wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - wget https://discordapp.com/api/webhooks/632288955932344330/A8NscT3VmhMvcAVUWuWuZAKCkJgt7E1UsUDFBAp5rx2s_8xJ3DZ5UDRApjy6iDAILIar
   - chmod +x send.sh
   - ./send.sh success $WEBHOOK_URL
 after_failure:
-  #- wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - wget https://discordapp.com/api/webhooks/632288955932344330/A8NscT3VmhMvcAVUWuWuZAKCkJgt7E1UsUDFBAp5rx2s_8xJ3DZ5UDRApjy6iDAILIar
   - chmod +x send.sh
   - ./send.sh failure $WEBHOOK_URL
