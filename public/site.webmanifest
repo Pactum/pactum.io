@@ -1,0 +1,26 @@
+{
+  "name": "Pactum IO",
+  "short_name": "Pactum",
+  "description": "Software engineering consulting by Matthew Swezey.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050605",
+  "theme_color": "#98C740",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

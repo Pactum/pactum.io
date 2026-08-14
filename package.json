@@ -1,0 +1,34 @@
+{
+  "name": "pactum.io",
+  "private": true,
+  "type": "module",
+  "description": "Pactum IO — software engineering consulting by Matthew Swezey.",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^3.34.0",
+    "@emotion/react": "^11.14.0",
+    "@react-router/node": "^8",
+    "@react-router/serve": "^8",
+    "isbot": "^5.1.36",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router": "^8"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^8",
+    "@types/node": "^22",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.3"
+  }
+}
