@@ -1,6 +1,7 @@
+import { caseStudies } from "~/data/case-studies";
 import { services, site } from "~/data/site";
 
-const staticPaths = ["/", "/about", "/contact", "/services", "/technologies", "/terms"];
+const staticPaths = ["/", "/about", "/contact", "/services", "/case-studies", "/technologies", "/terms"];
 
 export function loader() {
   const lastmod = new Date().toISOString();
@@ -9,6 +10,10 @@ export function loader() {
     ...services.map((service) => ({
       path: `/services/${service.slug}`,
       priority: "0.7",
+    })),
+    ...caseStudies.map((study) => ({
+      path: `/case-studies/${study.slug}`,
+      priority: "0.6",
     })),
   ];
 

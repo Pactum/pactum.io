@@ -204,6 +204,7 @@ export function getService(slug: string) {
 
 export const navLinks = [
   { to: "/services", label: "Services" },
+  { to: "/case-studies", label: "Work" },
   { to: "/technologies", label: "Tech" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
