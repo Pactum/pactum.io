@@ -1,1 +1,0 @@
-import rootReducer from './reducers';
