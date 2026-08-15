@@ -28,9 +28,15 @@ The app is at [http://localhost:5173](http://localhost:5173).
 | Command | Purpose |
 | --- | --- |
 | `npm run dev` | Vite + React Router SSR dev server |
-| `npm run build` | Production client and server bundles |
-| `npm start` | Serve the production build |
+| `npm run build` | Production client/server bundles and `.amplify-hosting` |
+| `npm start` | Serve the production Node build locally |
 | `npm run typecheck` | Generate route types and run `tsc` |
+
+## Amplify Hosting
+
+SSR deploys through AWS Amplify. `npm run build` writes an Amplify compute bundle to `.amplify-hosting/` with a Node 24 runtime. `amplify.yml` points artifacts at that directory and uses Node 24.
+
+Connect the GitHub repo in Amplify Hosting as an SSR app. Do not set the artifact directory to `build/client`.
 
 ## Practice areas
 

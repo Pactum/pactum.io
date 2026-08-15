@@ -6,3 +6,4 @@
 # React Router
 /.react-router/
 /build/
+/.amplify-hosting/
