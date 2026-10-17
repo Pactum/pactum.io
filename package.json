@@ -18,7 +18,7 @@
     "@react-router/express": "^8.3.0",
     "@react-router/node": "^8",
     "@react-router/serve": "^8",
-    "compression": "^1.8.1",
+    "compression": "^1.8.2",
     "express": "^5.2.1",
     "isbot": "^5.1.36",
     "lucide-react": "^0.562.0",
