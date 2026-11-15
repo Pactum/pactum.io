@@ -56,6 +56,19 @@ const config = defineConfig({
         body: { value: '"Prime", "Inter", ui-sans-serif, system-ui, sans-serif' },
       },
     },
+    semanticTokens: {
+      colors: {
+        pactum: {
+          solid: { value: "{colors.pactum.500}" },
+          contrast: { value: "{colors.ink.950}" },
+          fg: { value: "{colors.pactum.400}" },
+          muted: { value: "{colors.pactum.800}" },
+          subtle: { value: "{colors.pactum.900}" },
+          emphasized: { value: "{colors.pactum.300}" },
+          focusRing: { value: "{colors.pactum.500}" },
+        },
+      },
+    },
     recipes: {
       heading: {
         base: {
