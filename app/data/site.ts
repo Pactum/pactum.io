@@ -7,6 +7,10 @@ export const site = {
     "Pactum IO is the software consulting practice of Matthew Swezey. SaaS bootstrapping, cloud architecture, AI, full stack, DevOps, platform, and blockchain — scoped and shipped by one operator.",
   linkedin: "https://www.linkedin.com/in/swezey-matt/",
   github: "https://github.com/pactum",
+  // TODO(content): set these to turn on the direct contact buttons in the CTA band.
+  // Leave empty to hide them. Example: "https://cal.com/your-handle/intro"
+  bookingUrl: "" as string,
+  email: "" as string,
   locale: "en_US",
   owner: {
     name: "Matthew Swezey",
@@ -56,7 +60,7 @@ export const services: Service[] = [
     slug: "cloud-architecture",
     title: "Cloud Architecture",
     eyebrow: "AWS-first systems",
-    short: "Cloud systems that match the workload — and the bill you are willing to pay.",
+    short: "Cloud systems that match the workload and the bill you are willing to pay.",
     summary:
       "Architecture on AWS and adjacent cloud: service boundaries, data stores, networking, identity, and cost. I design for the system you will operate, not a conference diagram.",
     problem:
@@ -80,7 +84,7 @@ export const services: Service[] = [
     slug: "ai",
     title: "AI",
     eyebrow: "Applied systems",
-    short: "Production AI that fits the product — not a demo taped to the side.",
+    short: "Production AI that fits the product, not a demo taped to the side.",
     summary:
       "Design and ship AI features, agent workflows, and model integrations that hold up in production: retrieval, evaluation, cost control, and the boring operational pieces most prototypes skip.",
     problem:

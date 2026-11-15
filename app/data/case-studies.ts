@@ -14,7 +14,7 @@ export const caseStudies: CaseStudy[] = [
     title: "SaaS foundation",
     lane: "SaaS Bootstrapping",
     status: "soon",
-    summary: "Auth, tenancy, billing, and the first billable loop — from zero to a product a team can hire onto.",
+    summary: "Auth, tenancy, billing, and the first billable loop, from zero to a product a team can hire onto.",
   },
   {
     slug: "cloud-rebuild",
