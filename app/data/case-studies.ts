@@ -10,6 +10,20 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
+    slug: "ai-in-the-sdlc",
+    title: "AI across the software lifecycle",
+    lane: "AI Implementation",
+    status: "soon",
+    summary: "Introduced and led AI adoption across the software development lifecycle of a nonprofit in the giving and donations space with Claude: code generation, code review, troubleshooting, and ongoing monitoring.",
+  },
+  {
+    slug: "ai-for-professionals",
+    title: "AI coaching for professionals",
+    lane: "AI Training and Workshops",
+    status: "soon",
+    summary: "Coached professionals to sharpen workplace communication with AI and to research market pay with ChatGPT. They used that research to negotiate better compensation and perks for themselves and their direct reports.",
+  },
+  {
     slug: "saas-foundation",
     title: "SaaS foundation",
     lane: "SaaS Bootstrapping",
@@ -22,13 +36,6 @@ export const caseStudies: CaseStudy[] = [
     lane: "Cloud Architecture",
     status: "soon",
     summary: "An estate that grew by accident, reduced to a system with clear boundaries, identity, and a cost story.",
-  },
-  {
-    slug: "production-ai",
-    title: "Production AI",
-    lane: "AI Tools and Agents",
-    status: "soon",
-    summary: "A model feature that left the demo and held up under latency, evals, cost, and real users.",
   },
   {
     slug: "full-stack-ship",
