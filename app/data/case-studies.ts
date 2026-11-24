@@ -14,7 +14,7 @@ export const caseStudies: CaseStudy[] = [
     title: "AI across the software lifecycle",
     lane: "AI Implementation",
     status: "soon",
-    summary: "Introduced and led AI adoption across the software development lifecycle of a nonprofit in the giving and donations space with Claude: code generation, code review, troubleshooting, and ongoing monitoring.",
+    summary: "Introduced and led Claude adoption across the software development lifecycle of a nonprofit in the giving and donations space: code generation, code review, troubleshooting, and ongoing monitoring.",
   },
   {
     slug: "ai-for-professionals",
