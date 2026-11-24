@@ -9,16 +9,24 @@ import type { Route } from "./+types/about";
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
     title: `About ${site.owner.name}`,
-    description: `${site.owner.name} is the sole owner and operator of Pactum IO, an LLC for software engineering consulting across SaaS bootstrapping, cloud architecture, AI, full stack, DevOps, platform, and blockchain.`,
+    description: `${site.owner.name} has written software professionally since 2013 and consults through Pactum IO, LLC on practical AI, AWS, DevOps, and full stack work.`,
     path: "/about",
     type: "profile",
   });
 }
 
 const facts = [
-  { label: "Entity", value: site.legalName },
-  { label: "Operator", value: site.owner.name },
-  { label: "Work", value: "Hands-on principal engineering" },
+  { label: "Company", value: site.legalName },
+  { label: "Writing software since", value: "2013" },
+  { label: "Main cloud", value: "AWS" },
+];
+
+const background = [
+  "Worked on site as a consultant for AEM BPM customers, deploying and customizing workflow solutions that automated human centric processes.",
+  "Built smart contracts and audited token sales for early crypto projects in 2018.",
+  "Built an AI support assistant on live backend data at a post Series D startup.",
+  "Led Claude adoption across the development process at a nonprofit in the giving and donations space: code generation, code review, troubleshooting, and monitoring.",
+  "Coached professionals on using AI for workplace writing and market pay research.",
 ];
 
 export default function About() {
@@ -38,7 +46,7 @@ export default function About() {
           maxW="3xl"
           mb="8"
         >
-          A practice, not a staffing firm.
+          Hi, I am Matt.
         </Heading>
 
         <Flex direction={{ base: "column", lg: "row" }} gap={{ base: 10, lg: 16 }} align="start">
@@ -58,18 +66,31 @@ export default function About() {
               {site.owner.role}
             </Text>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              Pactum IO is my LLC. I use it to consult on software engineering — the kind of work
-              that needs someone who can hold the architecture and still open the editor. I am the
-              only owner and the only operator.
+              I have written software professionally since 2013. Pactum IO is the LLC I consult
+              through, and it is just me, so the person on the first call is the person doing the
+              work.
             </Text>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              That is the point. Clients are not buying a logo and a rotating cast. They are buying
-              judgment and execution from one person who has shipped across AI systems, crypto
-              products, full-stack SaaS, DevOps, internal platforms, and cloud architecture.
+              I have a computer science degree with a math minor. Most of my work runs on AWS, and I
+              spend as much time on infrastructure, CI/CD, developer experience, and architecture as
+              I do on application code. I also like hardware.
             </Text>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              If you need a factory of juniors, I am the wrong shop. If you need a principal who
-              will scope the work, build it, and leave you able to run it, we should talk.
+              A few things I have done:
+            </Text>
+            <Stack as="ul" gap="3" pl="0" m="0">
+              {background.map((item) => (
+                <Text as="li" key={item} listStyleType="none" color="ink.100" pl="5" position="relative" lineHeight="1.7">
+                  <Box as="span" position="absolute" left="0" color="pactum.500">
+                    ▸
+                  </Box>
+                  {item}
+                </Text>
+              ))}
+            </Stack>
+            <Text color="ink.200" fontSize="lg" lineHeight="1.8">
+              Right now I mostly help small businesses and teams put AI to work where it saves real
+              time, and build the cloud systems underneath. If that sounds useful, send me a note.
             </Text>
             <Stack direction={{ base: "column", sm: "row" }} gap="3">
               <Button asChild colorPalette="pactum" borderRadius="full">
@@ -95,7 +116,10 @@ export default function About() {
           ))}
         </SimpleGrid>
 
-        <CtaBand />
+        <CtaBand
+          title="Want to work together?"
+          body="Send a few lines about what you are working on, and we can set up a call."
+        />
       </Box>
     </>
   );
