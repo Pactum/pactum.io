@@ -86,7 +86,7 @@ export const services: Service[] = [
     problem:
       "Small teams lose hours to copy and paste: intake forms retyped into spreadsheets, invoices keyed in by hand, the same email answered twenty times. Off the shelf automations break quietly and nobody notices for weeks.",
     approach:
-      "I map one workflow end to end, then automate the boring middle while keeping a person in the loop where judgment matters. Every automation gets logging and an alert when it fails, because silent breakage is worse than no automation.",
+      "I have automated human centric workflows since working on site as a consultant with AEM BPM customers, deploying and customizing workflow solutions. Today I map one workflow end to end, then automate the boring middle while keeping a person in the loop where judgment matters. Every automation gets logging and an alert when it fails, because silent breakage is worse than no automation.",
     outcomes: [
       "Repetitive steps removed from a real workflow",
       "AI used for sorting, drafting, and extraction where it is reliable",
