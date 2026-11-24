@@ -24,7 +24,7 @@ const facts = [
 const background = [
   "Worked on site as a consultant for AEM BPM customers, deploying and customizing workflow solutions that automated human centric processes.",
   "Built smart contracts and audited token sales for early crypto projects in 2018.",
-  "Built an AI support assistant on live backend data at a post Series D startup.",
+  "Built an AI support assistant on live backend data at a post Series D startup. It cut support cost by about 33%, roughly $1M a year.",
   "Led Claude adoption across the development process at a nonprofit in the giving and donations space: code generation, code review, troubleshooting, and monitoring.",
   "Coached professionals on using AI for workplace writing and market pay research.",
 ];
