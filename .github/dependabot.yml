@@ -1,0 +1,19 @@
+# Dependabot configuration
+# Docs: https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      # All npm security fixes in one PR
+      npm-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
+      # All npm version bumps in one PR
+      npm-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
