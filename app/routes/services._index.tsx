@@ -10,7 +10,7 @@ import type { Route } from "./+types/services._index";
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
     title: "Services",
-    description: `Consulting from ${site.name}: AI implementation, workflow automation, AI tools and agents, AI training, plus cloud architecture, DevOps, full stack, SaaS, platform, and blockchain engineering.`,
+    description: `${site.name} services: AI implementation, workflow automation, AI tools and agents, and AI training, backed by AWS cloud, DevOps, and full stack engineering.`,
     path: "/services",
   });
 }

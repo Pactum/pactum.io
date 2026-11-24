@@ -2,8 +2,8 @@ import { Box, Button, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react"
 import { Link as RouterLink, data } from "react-router";
 import { CtaBand } from "~/components/cta-band";
 import { JsonLd } from "~/components/json-ld";
-import { getService, services } from "~/data/site";
-import { pageMeta, serviceJsonLd } from "~/lib/seo";
+import { getService, services, site } from "~/data/site";
+import { breadcrumbJsonLd, pageMeta, serviceJsonLd } from "~/lib/seo";
 import type { Route } from "./+types/services.$slug";
 
 export function loader({ params }: Route.LoaderArgs) {
@@ -26,7 +26,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
   const { service } = loaderData;
   return pageMeta({
     title: service.title,
-    description: service.summary,
+    description: `${service.short} ${service.title} consulting from ${site.owner.name}, Pactum IO.`,
     path: `/services/${service.slug}`,
   });
 }
@@ -42,7 +42,14 @@ export default function ServiceDetail({ loaderData }: Route.ComponentProps) {
           name: `${service.title} consulting`,
           description: service.summary,
           path: `/services/${service.slug}`,
+          serviceType: service.title,
         })}
+      />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Services", path: "/services" },
+          { name: service.title, path: `/services/${service.slug}` },
+        ])}
       />
       <Box maxW="7xl" mx="auto" px={{ base: 4, md: 8 }} pt={{ base: 16, md: 20 }} pb="8">
         <Text letterSpacing="0.18em" textTransform="uppercase" color="pactum.500" fontSize="xs" mb="4">

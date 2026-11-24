@@ -2,7 +2,7 @@
   "name": "pactum.io",
   "private": true,
   "type": "module",
-  "description": "Pactum IO — software engineering consulting by Matthew Swezey.",
+  "description": "Pactum IO: practical AI and cloud engineering consulting by Matthew Swezey.",
   "engines": {
     "node": ">=24"
   },

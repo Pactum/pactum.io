@@ -12,7 +12,7 @@ import "./app.css";
 import { Provider } from "~/components/provider";
 import { Footer } from "~/components/footer";
 import { Navbar } from "~/components/navbar";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Link, Text } from "@chakra-ui/react";
 import { site } from "~/data/site";
 
 export const links: Route.LinksFunction = () => [
@@ -70,8 +70,24 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
         <Text color="ink.200" fontSize="lg" mb="8">
           {details}
         </Text>
-        <Text color="pactum.500">
-          <a href="/">Back to {site.name}</a>
+        <Text color="ink.200">
+          Try{" "}
+          <Link href="/services" color="pactum.500">
+            Services
+          </Link>
+          ,{" "}
+          <Link href="/about" color="pactum.500">
+            About
+          </Link>
+          , or{" "}
+          <Link href="/contact" color="pactum.500">
+            Contact
+          </Link>
+          , or go{" "}
+          <Link href="/" color="pactum.500">
+            back to {site.name}
+          </Link>
+          .
         </Text>
       </Box>
       <Footer />

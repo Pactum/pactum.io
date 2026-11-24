@@ -1,17 +1,18 @@
 import { caseStudies } from "~/data/case-studies";
 import { services, site } from "~/data/site";
 
-const staticPaths = ["/", "/about", "/contact", "/services", "/case-studies", "/technologies", "/terms"];
+const staticPaths = ["/", "/about", "/contact", "/services", "/case-studies", "/technologies", "/terms", "/privacy"];
 
 export function loader() {
-  const lastmod = new Date().toISOString();
+  const lastmod = site.contentUpdated;
   const urls = [
     ...staticPaths.map((path) => ({ path, priority: path === "/" ? "1.0" : "0.8" })),
     ...services.map((service) => ({
       path: `/services/${service.slug}`,
       priority: "0.7",
     })),
-    ...caseStudies.map((study) => ({
+    // Unpublished case studies are noindex, so they stay out of the sitemap too.
+    ...caseStudies.filter((study) => study.status === "published").map((study) => ({
       path: `/case-studies/${study.slug}`,
       priority: "0.6",
     })),

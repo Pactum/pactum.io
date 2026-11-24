@@ -7,7 +7,7 @@ import type { Route } from "./+types/contact";
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
     title: "Contact",
-    description: `Contact ${site.owner.name} at Pactum IO about SaaS bootstrapping, cloud architecture, AI, full stack, DevOps, platform, or blockchain work.`,
+    description: `Contact ${site.owner.name} at Pactum IO about AI implementation, workflow automation, AI tools and agents, training, or cloud and DevOps engineering.`,
     path: "/contact",
   });
 }

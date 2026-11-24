@@ -21,7 +21,7 @@ export function Footer() {
             </Text>
           </Flex>
           <Text color="ink.300" fontSize="sm" maxW="xs" lineHeight="1.7">
-            {site.legalName}. Software engineering consulting operated by {site.owner.name}.
+            {site.legalName}. Practical AI and cloud engineering consulting operated by {site.owner.name}.
           </Text>
         </Stack>
 
@@ -68,6 +68,9 @@ export function Footer() {
           </Link>
           <Link asChild color="ink.200" _hover={{ color: "white" }} fontSize="sm">
             <RouterLink to="/terms">Terms of Service</RouterLink>
+          </Link>
+          <Link asChild color="ink.200" _hover={{ color: "white" }} fontSize="sm">
+            <RouterLink to="/privacy">Privacy Policy</RouterLink>
           </Link>
         </Stack>
       </SimpleGrid>
