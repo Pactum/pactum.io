@@ -105,9 +105,8 @@ export type ProofPoint = {
   placeholder?: boolean
 };
 
-// TODO(content): replace with real, verifiable numbers.
 export const proofPoints: ProofPoint[] = [
-  { value: "00", label: "Metric label, for example systems shipped to production", placeholder: true },
-  { value: "00", label: "Metric label, for example a cost or deploy time result", placeholder: true },
-  { value: "00", label: "Metric label, for example clients or industries served", placeholder: true },
+  { value: "~33%", label: "Lower support cost from an AI support assistant I built at a post Series D startup" },
+  { value: "~$1M", label: "Yearly savings from that same assistant" },
+  { value: "2013", label: "Writing software professionally since" },
 ];

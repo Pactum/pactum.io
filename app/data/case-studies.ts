@@ -10,6 +10,13 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
+    slug: "ai-support-assistant",
+    title: "AI support assistant on live data",
+    lane: "AI Tools and Agents",
+    status: "soon",
+    summary: "Built an AI support assistant at a post Series D startup, wired to live backend data through a secure API gateway. It cut support cost by about 33%, roughly $1M a year.",
+  },
+  {
     slug: "ai-in-the-sdlc",
     title: "AI across the software lifecycle",
     lane: "AI Implementation",
