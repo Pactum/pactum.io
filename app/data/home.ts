@@ -7,28 +7,33 @@
 export const showPlaceholders = import.meta.env.DEV;
 
 export const hero = {
-  eyebrow: "Software engineering consulting",
-  titleTop: "Senior engineering",
-  titleBottom: "for the work that has to ship.",
-  body: "I'm Matthew Swezey, a principal engineer building software since 2013. Teams bring me in to design AWS architecture, stand up SaaS foundations, fix delivery pipelines, and put AI into production. Project or contract, you work with me directly.",
+  eyebrow: "Practical AI and cloud engineering",
+  titleTop: "Practical AI,",
+  titleBottom: "built by an engineer who ships.",
+  body: "I'm Matthew Swezey, a principal engineer building software since 2013. I help small businesses, nonprofits, and product teams put AI to work: automating busy work, building custom tools and agents, and training people to use AI well. Underneath is the AWS and DevOps experience to keep it all running.",
   highlights: [
     "Engineering since 2013",
-    "AWS first",
-    "Architecture through implementation",
-    "Available for projects and contracts",
+    "Listen first, plain language",
+    "AWS and DevOps under the hood",
+    "Projects, contracts, and workshops",
   ],
 };
 
 export const engagements = [
   {
-    label: "Advise",
-    title: "Architecture and delivery reviews",
-    body: "A focused look at your system, cloud estate, or pipeline. You get written findings and a prioritized plan your team can act on.",
+    label: "Assess",
+    title: "AI and systems assessments",
+    body: "A focused look at your workflows, tools, or cloud estate. You get written findings and a prioritized plan, with the quick wins called out.",
   },
   {
     label: "Build",
     title: "Scoped project builds",
-    body: "A defined outcome delivered start to finish: a SaaS foundation, a platform service, an AI feature, or a migration.",
+    body: "A defined outcome delivered start to finish: an automation, a custom AI tool or agent, a SaaS foundation, or a migration.",
+  },
+  {
+    label: "Train",
+    title: "Workshops and coaching",
+    body: "Hands on sessions for owners, staff, and volunteers, built around your real tasks so the habits stick.",
   },
   {
     label: "Embed",
@@ -48,11 +53,11 @@ export const processSteps = [
   },
   {
     title: "Build in the open",
-    body: "Work lands in your repos and your cloud accounts, so progress is always visible.",
+    body: "Work lands in your accounts, tools, and repos, so progress is always visible and you own the result.",
   },
   {
     title: "Handoff",
-    body: "Docs, runbooks, and a system your team can run, hire onto, or extend without me.",
+    body: "Plain language docs, a walkthrough with your team, and a system you can run, hire onto, or extend without me.",
   },
 ];
 

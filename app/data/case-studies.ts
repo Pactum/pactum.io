@@ -26,7 +26,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "production-ai",
     title: "Production AI",
-    lane: "AI",
+    lane: "AI Tools and Agents",
     status: "soon",
     summary: "A model feature that left the demo and held up under latency, evals, cost, and real users.",
   },
