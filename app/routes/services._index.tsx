@@ -1,16 +1,16 @@
-import { Box, Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Heading, Link, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { ArrowRight } from "lucide-react";
 import { Link as RouterLink } from "react-router";
 import { CtaBand } from "~/components/cta-band";
 import { JsonLd } from "~/components/json-ld";
-import { services, site } from "~/data/site";
+import { serviceGroups, servicesInGroup, site } from "~/data/site";
 import { organizationJsonLd, pageMeta } from "~/lib/seo";
 import type { Route } from "./+types/services._index";
 
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
     title: "Services",
-    description: `Software consulting from ${site.name}: SaaS bootstrapping, cloud architecture, AI, full stack, DevOps, platform, and blockchain.`,
+    description: `Consulting from ${site.name}: AI implementation, workflow automation, AI tools and agents, AI training, plus cloud architecture, DevOps, full stack, SaaS, platform, and blockchain engineering.`,
     path: "/services",
   });
 }
@@ -32,52 +32,67 @@ export default function ServicesIndex() {
           maxW="3xl"
           mb="6"
         >
-          Seven lanes. One engineer.
+          Practical AI, solid engineering. One engineer.
         </Heading>
-        <Text color="ink.200" fontSize="xl" maxW="2xl" lineHeight="1.7" mb="14">
-          Each engagement is scoped to the problem, then built by {site.owner.name}. Follow a lane
-          for how Pactum typically shows up.
+        <Text color="ink.200" fontSize="xl" maxW="2xl" lineHeight="1.7" mb="16">
+          Each engagement is scoped to the problem, then delivered by {site.owner.name}. Start with
+          AI if you want hours back. Start with engineering if you need a system built or rescued.
         </Text>
 
-        <SimpleGrid columns={{ base: 1, md: 2 }} gap="6" alignItems="stretch">
-          {services.map((service) => (
-            <Link
-              key={service.slug}
-              asChild
-              display="block"
-              w="100%"
-              h="100%"
-              _hover={{ textDecoration: "none" }}
-            >
-              <RouterLink to={`/services/${service.slug}`}>
-                <Box
+        {serviceGroups.map((group) => (
+          <Box as="section" key={group.id} mb="16">
+            <Stack gap="2" mb="8" maxW="3xl">
+              <Text letterSpacing="0.18em" textTransform="uppercase" color="pactum.500" fontSize="xs">
+                {group.label}
+              </Text>
+              <Heading as="h2" size={{ base: "xl", md: "2xl" }} color="white">
+                {group.title}
+              </Heading>
+              <Text color="ink.200" lineHeight="1.7">
+                {group.body}
+              </Text>
+            </Stack>
+            <SimpleGrid columns={{ base: 1, md: 2 }} gap="6" alignItems="stretch">
+              {servicesInGroup(group.id).map((service) => (
+                <Link
+                  key={service.slug}
+                  asChild
+                  display="block"
                   w="100%"
                   h="100%"
-                  borderWidth="1px"
-                  borderColor="whiteAlpha.100"
-                  borderRadius="2xl"
-                  p={{ base: 6, md: 8 }}
-                  bg="ink.800"
-                  transition="border-color 160ms ease, transform 160ms ease"
-                  _hover={{ borderColor: "pactum.600", transform: "translateY(-2px)" }}
+                  _hover={{ textDecoration: "none" }}
                 >
-                  <Text fontSize="xs" letterSpacing="0.16em" textTransform="uppercase" color="pactum.500" mb="3">
-                    {service.eyebrow}
-                  </Text>
-                  <Heading as="h2" size="xl" color="white" mb="3">
-                    {service.title}
-                  </Heading>
-                  <Text color="ink.200" lineHeight="1.7" mb="6">
-                    {service.short}
-                  </Text>
-                  <Text color="pactum.400" fontSize="sm" display="inline-flex" alignItems="center" gap="2">
-                    Read the brief <ArrowRight size={14} />
-                  </Text>
-                </Box>
-              </RouterLink>
-            </Link>
-          ))}
-        </SimpleGrid>
+                  <RouterLink to={`/services/${service.slug}`}>
+                    <Box
+                      w="100%"
+                      h="100%"
+                      borderWidth="1px"
+                      borderColor="whiteAlpha.100"
+                      borderRadius="2xl"
+                      p={{ base: 6, md: 8 }}
+                      bg="ink.800"
+                      transition="border-color 160ms ease, transform 160ms ease"
+                      _hover={{ borderColor: "pactum.600", transform: "translateY(-2px)" }}
+                    >
+                      <Text fontSize="xs" letterSpacing="0.16em" textTransform="uppercase" color="pactum.500" mb="3">
+                        {service.eyebrow}
+                      </Text>
+                      <Heading as="h3" size="xl" color="white" mb="3">
+                        {service.title}
+                      </Heading>
+                      <Text color="ink.200" lineHeight="1.7" mb="6">
+                        {service.short}
+                      </Text>
+                      <Text color="pactum.400" fontSize="sm" display="inline-flex" alignItems="center" gap="2">
+                        Read the brief <ArrowRight size={14} />
+                      </Text>
+                    </Box>
+                  </RouterLink>
+                </Link>
+              ))}
+            </SimpleGrid>
+          </Box>
+        ))}
 
         <CtaBand />
       </Box>

@@ -14,18 +14,23 @@ import {
   showPlaceholders,
   testimonials,
 } from "~/data/home";
-import { services, site } from "~/data/site";
+import { serviceGroups, servicesInGroup, site } from "~/data/site";
 import { technologies } from "~/data/technologies";
 import { organizationJsonLd, pageMeta } from "~/lib/seo";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
-    title: "Pactum IO · Senior Software Engineering Consulting",
+    title: "Pactum IO · Practical AI and Cloud Engineering",
     description: site.description,
     path: "/",
   });
 }
+
+const aiGroup = serviceGroups.find((group) => group.id === "ai")!;
+const engineeringGroup = serviceGroups.find((group) => group.id === "engineering")!;
+const aiServices = servicesInGroup("ai");
+const engineeringServices = servicesInGroup("engineering");
 
 const coreStack = technologies.filter((tech) => tech.kind !== "concept" && tech.weight >= 4);
 
@@ -195,12 +200,9 @@ export default function Home() {
       </Box>
 
       <Section>
-        <SectionHeader
-          eyebrow="What you can hire me for"
-          title="The hard parts between an idea and a system in production."
-        />
+        <SectionHeader eyebrow={aiGroup.label} title={aiGroup.title} body={aiGroup.body} />
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} gap="4">
-          {services.map((service) => (
+          {aiServices.map((service) => (
             <Link key={service.slug} asChild display="block" h="100%" _hover={{ textDecoration: "none" }}>
               <RouterLink to={`/services/${service.slug}`}>
                 <Flex
@@ -211,6 +213,9 @@ export default function Home() {
                   transition="border-color 160ms ease, transform 160ms ease"
                   _hover={{ borderColor: "pactum.600", transform: "translateY(-2px)" }}
                 >
+                  <Text fontSize="xs" letterSpacing="0.16em" textTransform="uppercase" color="pactum.500" mb="3">
+                    {service.eyebrow}
+                  </Text>
                   <Heading as="h3" size="md" color="white" mb="2">
                     {service.title}
                   </Heading>
@@ -224,29 +229,43 @@ export default function Home() {
               </RouterLink>
             </Link>
           ))}
-          <Link asChild display="block" h="100%" _hover={{ textDecoration: "none" }}>
-            <RouterLink to="/contact">
-              <Flex
-                direction="column"
-                justify="center"
-                h="100%"
-                p="6"
-                borderWidth="1px"
-                borderStyle="dashed"
-                borderColor="pactum.700"
-                borderRadius="2xl"
-                _hover={{ borderColor: "pactum.500" }}
-              >
-                <Heading as="h3" size="md" color="pactum.500" mb="2">
-                  Something else?
-                </Heading>
-                <Text color="ink.200" fontSize="sm" lineHeight="1.6">
-                  If it involves software, infrastructure, or hardware, describe it and I will tell you whether I can help.
-                </Text>
-              </Flex>
-            </RouterLink>
-          </Link>
         </SimpleGrid>
+
+        <Box {...cardProps} bg="transparent" mt="6" p={{ base: 6, md: 8 }}>
+          <Grid templateColumns={{ base: "1fr", lg: "1fr 2fr" }} gap={{ base: 5, lg: 10 }} alignItems="start">
+            <Stack gap="2">
+              <Text fontSize="xs" letterSpacing="0.16em" textTransform="uppercase" color="pactum.500">
+                {engineeringGroup.label}
+              </Text>
+              <Heading as="h3" size="lg" color="white">
+                {engineeringGroup.title}
+              </Heading>
+              <Text color="ink.200" fontSize="sm" lineHeight="1.6">
+                {engineeringGroup.body}
+              </Text>
+            </Stack>
+            <SimpleGrid as="ul" columns={{ base: 1, sm: 2, md: 3 }} gap="3" pl="0" m="0">
+              {engineeringServices.map((service) => (
+                <Box as="li" key={service.slug} listStyleType="none">
+                  <Link asChild color="white" fontWeight="700" _hover={{ color: "pactum.400" }}>
+                    <RouterLink to={`/services/${service.slug}`}>{service.title}</RouterLink>
+                  </Link>
+                  <Text color="ink.300" fontSize="xs" mt="1">
+                    {service.eyebrow}
+                  </Text>
+                </Box>
+              ))}
+              <Box as="li" listStyleType="none">
+                <Link asChild color="pactum.500" fontWeight="700">
+                  <RouterLink to="/contact">Something else?</RouterLink>
+                </Link>
+                <Text color="ink.300" fontSize="xs" mt="1">
+                  Describe it and I will tell you if I can help
+                </Text>
+              </Box>
+            </SimpleGrid>
+          </Grid>
+        </Box>
       </Section>
 
       <Section>
@@ -254,7 +273,7 @@ export default function Home() {
           eyebrow="Ways to work together"
           title="Pick the shape that fits the problem."
         />
-        <SimpleGrid columns={{ base: 1, md: 3 }} gap="6">
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap="6">
           {engagements.map((item) => (
             <Box key={item.label} {...cardProps} p="8">
               <Text color="pactum.500" fontSize="xs" letterSpacing="0.18em" textTransform="uppercase" mb="4">
@@ -415,8 +434,8 @@ export default function Home() {
         </SimpleGrid>
 
         <CtaBand
-          title="Have a project or a contract role to fill?"
-          body="Send a few lines about what you are building or what is broken. If it looks like a fit, we set up a call and scope it together."
+          title="Have busy work AI could take off your plate?"
+          body="Or a project to ship, or a contract role to fill. Send a few lines about what you are working on. If it looks like a fit, we set up a call and scope it together."
         />
       </Section>
     </>
