@@ -46,7 +46,7 @@ export default function About() {
           maxW="3xl"
           mb="8"
         >
-          Hi, I am Matt.
+          About Matthew Swezey
         </Heading>
 
         <Flex direction={{ base: "column", lg: "row" }} gap={{ base: 10, lg: 16 }} align="start">
@@ -59,24 +59,21 @@ export default function About() {
             objectFit="cover"
           />
           <Stack gap="6" maxW="2xl">
-            <Heading as="h2" size="xl" color="white">
-              {site.owner.name}
-            </Heading>
             <Text color="pactum.400" fontSize="lg">
               {site.owner.role}
             </Text>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              I have written software professionally since 2013. Pactum IO is the LLC I consult
-              through, and it is just me, so the person on the first call is the person doing the
-              work.
+              I'm a software engineer with more than a decade of experience building and running
+              production systems. Pactum IO, LLC is the consulting practice I founded to work
+              directly with clients, and I scope, build, and support every engagement myself.
             </Text>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              I have a computer science degree with a math minor. Most of my work runs on AWS, and I
-              spend as much time on infrastructure, CI/CD, developer experience, and architecture as
-              I do on application code. I also like hardware.
+              I hold a bachelor's degree in computer science with a minor in mathematics. Most of my
+              work runs on AWS, and my focus extends past application code into cloud architecture,
+              DevOps, infrastructure, and developer experience.
             </Text>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              A few things I have done:
+              Selected experience:
             </Text>
             <Stack as="ul" gap="3" pl="0" m="0">
               {background.map((item) => (
@@ -89,8 +86,9 @@ export default function About() {
               ))}
             </Stack>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              Right now I mostly help small businesses and teams put AI to work where it saves real
-              time, and build the cloud systems underneath. If that sounds useful, send me a note.
+              Today I help small businesses, nonprofits, and product teams adopt AI where it saves
+              real time, and build the cloud systems that support it. If you have a project in mind,
+              I'd welcome a conversation.
             </Text>
             <Stack direction={{ base: "column", sm: "row" }} gap="3">
               <Button asChild colorPalette="pactum" borderRadius="full">
