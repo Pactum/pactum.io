@@ -44,10 +44,11 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "cloud-rebuild",
-    title: "Cloud rebuild",
+    title: "Cloud re-architecture for a nonprofit",
     lane: "Cloud Architecture",
     status: "soon",
-    summary: "A cloud setup that had grown by accident, rebuilt into a system with clear boundaries, proper identity controls, and predictable costs.",
+    metaDescription: "I'm leading a cloud re-architecture of donation infrastructure and payment workflows for a nonprofit giving platform.",
+    summary: "I'm leading a cloud re-architecture of the donation infrastructure at a nonprofit giving platform, including its payment workflows, to make it more reliable and easier to maintain.",
   },
   {
     slug: "full-stack-ship",
@@ -65,10 +66,10 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "on-chain-product",
-    title: "On-chain product",
+    title: "Smart contracts for token sales",
     lane: "Blockchain / Crypto",
     status: "soon",
-    summary: "Smart contracts, indexing, and the regular product that had to work alongside them.",
+    summary: "During the 2017 ICO boom I built and secured smart contracts that held more than $30M in digital assets, and I audited contracts for other Ethereum projects.",
   },
 ];
 

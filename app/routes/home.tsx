@@ -21,7 +21,7 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
-    title: "Pactum IO · Practical AI and Cloud Engineering",
+    title: "Pactum IO · Matthew Swezey, Principal Engineer for AI and Cloud",
     description: site.metaDescription,
     path: "/",
   });
@@ -259,7 +259,7 @@ export default function Home() {
       <Section>
         <SectionHeader
           eyebrow="Ways to work together"
-          title="Pick whatever fits your situation."
+          title="Most of my work takes one of these four shapes."
         />
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap="6">
           {engagements.map((item) => (
@@ -281,8 +281,8 @@ export default function Home() {
       <Section>
         <SectionHeader
           eyebrow="Results"
-          title="Some of my recent work."
-          body="I'm still getting the full write ups cleared for publication. If you want details, ask on a call and I'll walk you through the ones that relate to your project."
+          title="A few results I can talk about."
+          body="Most of my client work is under NDA, so I describe it here without names. I'm happy to go into detail on a call about anything that relates to your project."
         />
 
         {visibleProofPoints.length > 0 ? (
@@ -405,7 +405,7 @@ export default function Home() {
             Why Pactum
           </Text>
           <Heading as="h2" size={{ base: "2xl", md: "3xl" }} color="white">
-            Pactum is a one person consulting company, and that person is me.
+            You work directly with a principal engineer, from the first call to the handoff.
           </Heading>
         </Grid>
         <SimpleGrid columns={{ base: 1, md: 3 }} gap="6">
@@ -422,8 +422,8 @@ export default function Home() {
         </SimpleGrid>
 
         <CtaBand
-          title="Have work you'd like AI to take off your plate?"
-          body="Or maybe you have a project to ship or a contract role to fill. Send me a few lines about what you're working on. If it looks like a good fit, we'll set up a call and scope it together."
+          title="Tell me what you're working on."
+          body="It might be an AI project, a system that needs to scale, or a senior role you need covered for a few months. Send me a few lines, and if it looks like a good fit we'll set up a call and scope it together."
         />
       </Section>
     </>
