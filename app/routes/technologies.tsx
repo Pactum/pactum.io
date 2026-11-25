@@ -10,7 +10,7 @@ import type { Route } from "./+types/technologies";
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
     title: "Technologies",
-    description: `The stack ${site.owner.name} ships with at Pactum IO: AWS, TypeScript, React, AI, SaaS, Ethereum, Stripe, and the rest of the map.`,
+    description: `The languages, tools, and concepts ${site.owner.name} works with at Pactum IO, including AWS, TypeScript, React, AI, Ethereum, and Stripe.`,
     path: "/technologies",
   });
 }
@@ -52,7 +52,7 @@ export default function Technologies() {
       <Box className="tech-page" px={{ base: 4, md: 8 }} pt={{ base: 10, md: 12 }} pb="8">
         <Box maxW="7xl" mx="auto" mb={{ base: 6, md: 8 }}>
           <Text letterSpacing="0.18em" textTransform="uppercase" color="pactum.500" fontSize="xs" mb="3">
-            Field kit
+            Technologies
           </Text>
           <Heading
             as="h1"
@@ -63,7 +63,7 @@ export default function Technologies() {
             maxW="3xl"
             mb="6"
           >
-            The map I actually ship with.
+            The tools and tech I work with.
           </Heading>
           <ul className="tech-legend">
             {techKinds.map((kind) => (

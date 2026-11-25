@@ -18,33 +18,33 @@ const sections: { title: string; body: string[] }[] = [
   {
     title: "What this site collects",
     body: [
-      "pactum.io does not use cookies, analytics, advertising pixels, or third party trackers, and it has no accounts or forms.",
+      "pactum.io doesn't use cookies, analytics, advertising pixels, or third party trackers, and it has no accounts or forms.",
       "The site is hosted on Amazon Web Services (AWS Amplify and Amazon CloudFront). Like any web host, AWS processes standard request data such as your IP address, browser user agent, the page requested, and the time of the request, to deliver the site and keep it secure.",
     ],
   },
   {
     title: "When you contact me",
     body: [
-      `If you reach out by LinkedIn${site.email ? " or email" : ""}, I receive the information you choose to send, such as your name, contact details, and a description of your project. I use it only to reply, scope, and deliver the work you ask about.`,
-      "I do not sell, rent, or share your information for marketing. I share it only with service providers needed to run the business (for example email, scheduling, or accounting tools), or when the law requires it.",
+      `If you reach out on LinkedIn${site.email ? " or by email" : ""}, I receive whatever you choose to send, such as your name, contact details, and a description of your project. I only use it to reply to you and to scope and deliver the work you ask about.`,
+      "I don't sell, rent, or share your information for marketing. I only share it with service providers I need to run the business, like email, scheduling, or accounting tools, or when the law requires it.",
     ],
   },
   {
     title: "Client data during engagements",
     body: [
-      "Data you share during a consulting engagement is handled under that engagement's written terms. Work happens in your own accounts and systems wherever possible, and AI tools are used only in ways we agree on in writing.",
+      "Data you share during a consulting project is handled under that project's written terms. I work in your own accounts and systems wherever I can, and I only use AI tools in ways we've agreed on in writing.",
     ],
   },
   {
     title: "Retention and your choices",
     body: [
-      "I keep project correspondence for as long as needed for the engagement and for ordinary business and tax records. You can ask me to access, correct, or delete information about you at any time, and I will respond within 30 days.",
+      "I keep project correspondence for as long as the project needs it and for normal business and tax records. You can ask me to show you, correct, or delete the information I have about you at any time, and I'll respond within 30 days.",
     ],
   },
   {
     title: "Changes and contact",
     body: [
-      `If this policy changes, the new version will be posted here with a new effective date. Questions go to ${site.owner.name}${site.email ? ` at ${site.email}` : " through the Contact page"}.`,
+      `If this policy changes, I'll post the new version here with a new effective date. If you have questions, reach out to ${site.owner.name}${site.email ? ` at ${site.email}` : " through the Contact page"}.`,
     ],
   },
 ];

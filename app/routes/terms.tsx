@@ -28,9 +28,9 @@ export default function Terms() {
         Terms of Service
       </Heading>
       <Text color="ink.200" fontSize="lg" lineHeight="1.8" mb="6">
-        Use of pactum.io and consulting engagements with {site.legalName} are governed by the
-        Website and Consulting Terms, effective August 14, 2026. The current document is
-        published as a PDF.
+        Your use of pactum.io and any consulting work with {site.legalName} are covered by the
+        Website and Consulting Terms, effective August 14, 2026. You can read the current version
+        as a PDF.
       </Text>
       <Button asChild colorPalette="pactum" borderRadius="full">
         <a href="/PactumTOS.pdf" target="_blank" rel="noopener noreferrer">

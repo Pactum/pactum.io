@@ -1,7 +1,7 @@
 {
   "name": "Pactum IO",
   "short_name": "Pactum",
-  "description": "Practical AI and cloud engineering consulting by Matthew Swezey.",
+  "description": "AI and cloud engineering consulting from Matthew Swezey.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#050605",

@@ -13,10 +13,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 const prompts = [
-  "What you are building, or what is broken",
-  "Whether you need architecture, implementation, or both",
-  "Timeline and the constraints that actually matter",
-  "Stack, cloud, and any compliance you already have",
+  "What you're building, or what's broken",
+  "Whether you need help planning it, building it, or both",
+  "Your timeline and any constraints that really matter",
+  "Your current tools, cloud provider, and any compliance requirements",
 ];
 
 export default function Contact() {
@@ -36,22 +36,22 @@ export default function Contact() {
           maxW="3xl"
           mb="6"
         >
-          Start with the work, not a deck.
+          Tell me what you're working on.
         </Heading>
         <Text color="ink.200" fontSize="xl" maxW="2xl" lineHeight="1.7" mb="12">
-          Email me or reach me on LinkedIn. If the fit is real, we schedule a call and decide whether Pactum
-          should take the engagement.
+          Email me or send me a message on LinkedIn. If it sounds like a good fit, we'll set up
+          a call and figure out together whether I'm the right person for the job.
         </Text>
 
         <SimpleGrid columns={{ base: 1, lg: 2 }} gap="8">
           <Box borderWidth="1px" borderColor="whiteAlpha.100" borderRadius="2xl" p={{ base: 6, md: 10 }} bg="ink.800">
             <Text fontSize="xs" letterSpacing="0.16em" textTransform="uppercase" color="pactum.500" mb="6">
-              Direct
+              Reach me
             </Text>
             <Stack gap="6">
               <Box>
                 <Text color="ink.300" fontSize="sm" mb="1">
-                  Operator
+                  You'll be talking to
                 </Text>
                 <Text color="white" fontSize="lg">
                   {site.owner.name}
@@ -97,7 +97,7 @@ export default function Contact() {
 
           <Box borderWidth="1px" borderColor="whiteAlpha.100" borderRadius="2xl" p={{ base: 6, md: 10 }}>
             <Text fontSize="xs" letterSpacing="0.16em" textTransform="uppercase" color="pactum.500" mb="6">
-              Useful to include
+              Helpful to mention
             </Text>
             <Stack as="ul" gap="4" pl="0">
               {prompts.map((item) => (
