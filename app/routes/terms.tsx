@@ -6,7 +6,7 @@ import type { Route } from "./+types/terms";
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
     title: "Terms of Service",
-    description: `Terms of Service for ${site.legalName}.`,
+    description: `Website and consulting Terms of Service for ${site.legalName}, the practical AI and cloud engineering practice of ${site.owner.name}.`,
     path: "/terms",
   });
 }

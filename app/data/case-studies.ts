@@ -6,6 +6,8 @@ export type CaseStudy = {
   lane: string
   status: CaseStudyStatus
   summary: string
+  // Optional shorter text for <meta name="description"> when summary runs past 160 characters.
+  metaDescription?: string
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -14,6 +16,7 @@ export const caseStudies: CaseStudy[] = [
     title: "AI support assistant on live data",
     lane: "AI Tools and Agents",
     status: "soon",
+    metaDescription: "An AI support assistant on live backend data at a post Series D startup cut support cost by about 33%, roughly $1M a year.",
     summary: "Built an AI support assistant at a post Series D startup, wired to live backend data through a secure API gateway. It cut support cost by about 33%, roughly $1M a year.",
   },
   {
@@ -21,6 +24,7 @@ export const caseStudies: CaseStudy[] = [
     title: "AI across the software lifecycle",
     lane: "AI Implementation",
     status: "soon",
+    metaDescription: "Led Claude adoption across the software lifecycle of a nonprofit: code generation, code review, troubleshooting, and monitoring.",
     summary: "Introduced and led Claude adoption across the software development lifecycle of a nonprofit in the giving and donations space: code generation, code review, troubleshooting, and ongoing monitoring.",
   },
   {
@@ -28,6 +32,7 @@ export const caseStudies: CaseStudy[] = [
     title: "AI coaching for professionals",
     lane: "AI Training and Workshops",
     status: "soon",
+    metaDescription: "Coached professionals to use AI for workplace writing and market pay research that led to better compensation and perks.",
     summary: "Coached professionals to sharpen workplace communication with AI and to research market pay with ChatGPT. They used that research to negotiate better compensation and perks for themselves and their direct reports.",
   },
   {

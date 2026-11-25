@@ -5,6 +5,11 @@ export const site = {
   tagline: "Practical AI and cloud engineering from a principal who still writes the code.",
   description:
     "Pactum IO is the consulting practice of Matthew Swezey. Practical AI for small businesses, nonprofits, and product teams: workflow automation, AI tools and agents, and hands on training, built on solid cloud engineering.",
+  // Shorter description for <meta name="description"> (aim for 160 characters or fewer).
+  metaDescription:
+    "Practical AI for small businesses, nonprofits, and product teams: workflow automation, custom AI tools, and training from principal engineer Matthew Swezey.",
+  // Bump when page content changes. Used as <lastmod> in sitemap.xml.
+  contentUpdated: "2026-11-24",
   linkedin: "https://www.linkedin.com/in/swezey-matt/",
   github: "https://github.com/pactum",
   // TODO(content): set these to turn on the direct contact buttons in the CTA band.

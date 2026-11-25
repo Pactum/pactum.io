@@ -16,13 +16,13 @@ import {
 } from "~/data/home";
 import { serviceGroups, servicesInGroup, site } from "~/data/site";
 import { technologies } from "~/data/technologies";
-import { organizationJsonLd, pageMeta } from "~/lib/seo";
+import { homeJsonLd, pageMeta } from "~/lib/seo";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
     title: "Pactum IO · Practical AI and Cloud Engineering",
-    description: site.description,
+    description: site.metaDescription,
     path: "/",
   });
 }
@@ -95,7 +95,7 @@ const cardProps = {
 export default function Home() {
   return (
     <>
-      <JsonLd data={organizationJsonLd()} />
+      <JsonLd data={homeJsonLd()} />
 
       <Box as="section" maxW="7xl" mx="auto" px={{ base: 4, md: 8 }} pt={{ base: 14, md: 24 }}>
         <Flex
@@ -122,9 +122,7 @@ export default function Home() {
               color="white"
             >
               {hero.titleTop}{" "}
-              <Box as="span" color="pactum.500" display="block">
-                {hero.titleBottom}
-              </Box>
+              <span className="hero-accent">{hero.titleBottom}</span>
             </Heading>
             <Text fontSize={{ base: "lg", md: "xl" }} color="ink.200" lineHeight="1.7" maxW="2xl">
               {hero.body}

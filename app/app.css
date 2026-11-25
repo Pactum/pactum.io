@@ -380,3 +380,9 @@ body {
     animation: none;
   }
 }
+
+/* Plain class instead of a Chakra span so no inline <style> tag lands inside the H1. */
+.hero-accent {
+  display: block;
+  color: #98c740;
+}
