@@ -9,8 +9,8 @@ export const showPlaceholders = import.meta.env.DEV;
 export const hero = {
   eyebrow: "Practical AI and cloud engineering",
   titleTop: "I help businesses put AI",
-  titleBottom: "to work.",
-  body: "I'm Matthew Swezey, and I've been building software professionally since 2013. These days I work with small businesses, nonprofits, and product teams to automate the busy work, build custom AI tools and agents, and teach people how to use AI well. Most of my career has been spent on AWS and DevOps, so what I build is set up to keep running after I hand it over.",
+  titleBottom: "into production.",
+  body: "I'm Matthew Swezey, a principal engineer with thirteen years of shipping production software. I spent more than five years at a post Series D startup, most recently as tech lead of a core platform. While I was there I built an AI support assistant that saves about $1M a year. Now I help companies and nonprofits figure out where AI will pay off, build it properly on AWS, and get their teams using it.",
 };
 
 export const engagements = [
@@ -61,8 +61,8 @@ export const principles = [
     body: "The person who scopes your project is the same person who designs and builds it. Nobody gets swapped in after the sale.",
   },
   {
-    title: "Senior experience",
-    body: "I take on the kind of work a staff or principal engineer would, and then I write the code myself and leave you with a system you can run.",
+    title: "Senior judgment",
+    body: "I've led teams and owned platforms that a business depends on. I bring that judgment to scoping and architecture, and then I write the code myself.",
   },
   {
     title: "Built to hand off",
@@ -100,7 +100,7 @@ export type ProofPoint = {
 };
 
 export const proofPoints: ProofPoint[] = [
-  { value: "~33%", label: "Lower support cost from an AI support assistant I built at a post Series D startup" },
-  { value: "~$1M", label: "Yearly savings from that same assistant" },
-  { value: "2013", label: "The year I started writing software professionally" },
+  { value: "~$1M", label: "Saved each year by an AI support assistant I built, which cut support costs by about 33%" },
+  { value: "$30M+", label: "In digital assets held by smart contracts I built and secured" },
+  { value: "5+ years", label: "At a post Series D startup, most recently leading a B2B platform that supports billions in annualized GMV" },
 ];

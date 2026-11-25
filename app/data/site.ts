@@ -2,12 +2,12 @@ export const site = {
   name: "Pactum IO",
   legalName: "Pactum IO, LLC",
   url: "https://pactum.io",
-  tagline: "I help businesses put AI to work, and I still write the code myself.",
+  tagline: "I help businesses put AI into production, and I still write the code myself.",
   description:
-    "Pactum IO is the consulting practice of Matthew Swezey, a principal engineer who helps small businesses, nonprofits, and product teams put AI to work. He automates workflows, builds custom AI tools and agents, runs hands on training, and builds the cloud systems that keep it all running.",
+    "Pactum IO is the consulting practice of Matthew Swezey, a principal engineer in Austin who has built production software since 2013. He has led platform teams at a venture backed startup, and he now helps companies and nonprofits put AI into production: custom AI tools and agents, workflow automation, team training, and the AWS systems underneath.",
   // Shorter description for <meta name="description"> (aim for 160 characters or fewer).
   metaDescription:
-    "I'm Matthew Swezey, a principal engineer. I help small businesses, nonprofits, and product teams automate busy work, build AI tools, and train staff.",
+    "I'm Matthew Swezey, a principal engineer with 13 years in production software. I help companies put AI into production and build the AWS systems behind it.",
   // Bump when page content changes. Used as <lastmod> in sitemap.xml.
   contentUpdated: "2026-11-25",
   linkedin: "https://www.linkedin.com/in/swezey-matt/",
@@ -20,7 +20,7 @@ export const site = {
   locale: "en_US",
   owner: {
     name: "Matthew Swezey",
-    role: "Owner & Principal Engineer",
+    role: "Founder and Principal Engineer",
     photo: "/swezey_headshot.jpg",
   },
 } as const;
@@ -32,13 +32,13 @@ export const serviceGroups: { id: ServiceGroup; label: string; title: string; bo
     id: "ai",
     label: "Practical AI",
     title: "I start with the work that eats up your week.",
-    body: "I work with restaurants, retailers, service businesses, manufacturers, nonprofits, and small teams. Once we know where your time goes, I put AI on the tasks where it actually helps and leave the rest alone.",
+    body: "I work with small businesses, nonprofits, and product teams. We start by finding where your time and money actually go. Then I put AI on the work where it clearly pays for itself and leave the rest alone.",
   },
   {
     id: "engineering",
     label: "Engineering",
     title: "I also build and fix the software underneath.",
-    body: "If you need a system built, scaled, or rescued, I've been doing that work for more than a decade, mostly on AWS.",
+    body: "If you need a system built, scaled, or rescued, I've been doing that work since 2013, mostly on AWS, including years spent leading a platform that handles millions of transactions a month.",
   },
 ];
 
@@ -289,7 +289,7 @@ export const services: Service[] = [
     eyebrow: "Smart contracts and dapps",
     short: "I build smart contracts and the regular software that has to work alongside them.",
     summary:
-      "I work on smart contracts, indexing, wallets, and the full product around a protocol. I've been building in this space since 2018, and I care more about correctness and usability than hype.",
+      "I work on smart contracts, indexing, wallets, and the full product around a protocol. I've been building in this space since 2017, including contracts that held more than $30M in digital assets, and I care more about correctness and usability than hype.",
     problem:
       "Crypto products usually fail where the pieces meet. A contract can't be operated safely, an indexer returns wrong data, a wallet flow confuses users, or the backend treats the chain as an afterthought.",
     approach:
