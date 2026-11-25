@@ -102,5 +102,5 @@ export type ProofPoint = {
 export const proofPoints: ProofPoint[] = [
   { value: "~$1M", label: "Saved each year by an AI support assistant I built, which cut support costs by about 33%" },
   { value: "$30M+", label: "In digital assets held by smart contracts I built and secured" },
-  { value: "5+ years", label: "At a post Series D startup, most recently leading a B2B platform that handles millions of transactions a month" },
+  { value: "5+ years", label: "At a post Series D startup, most recently leading a B2B platform that supports billions in annualized GMV" },
 ];

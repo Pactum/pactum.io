@@ -40,7 +40,7 @@ const experience: Role[] = [
     years: "2020 to 2025",
     title: "Tech lead, dashboard and billing platform",
     where: "Post Series D startup",
-    body: "I led the team behind the company's B2B merchant dashboard and billing platform. I directed its move off legacy systems onto a cloud native platform on AWS that handles millions of transactions a month and became a real selling point for the sales team. I also built an AI support assistant on live backend data that cut support costs by about 33%, roughly $1M a year.",
+    body: "I led the team behind the company's B2B merchant dashboard and billing platform. I directed its move off legacy systems onto a cloud native platform on AWS. Today it handles millions of transactions a month and supports billions of dollars in annualized GMV across several verticals, and it became one of the company's main selling points. I also mentored the engineers on the team and pushed for better reliability, observability, and incident response. I also built an AI support assistant on live backend data that cut support costs by about 33%, roughly $1M a year.",
   },
   {
     years: "2017 to 2021",
@@ -52,7 +52,7 @@ const experience: Role[] = [
     years: "2013 to 2017",
     title: "Software engineer and consultant",
     where: "Government and enterprise clients",
-    body: "I started out helping modernize a federal land records system, then spent three years building workflow and web systems for enterprise and public sector clients. One of them, a virtual job fair for a state government, ran for years after I left and was picked up by other states.",
+    body: "I started out helping modernize a federal land records system, then spent three years building workflow and web systems for enterprise and public sector clients. One of them, Colorado's virtual job fair, ran for years after I left, and other states asked for the same system.",
   },
 ];
 
