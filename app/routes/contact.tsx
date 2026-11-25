@@ -39,7 +39,7 @@ export default function Contact() {
           Start with the work, not a deck.
         </Heading>
         <Text color="ink.200" fontSize="xl" maxW="2xl" lineHeight="1.7" mb="12">
-          Reach me on LinkedIn. If the fit is real, we schedule a call and decide whether Pactum
+          Email me or reach me on LinkedIn. If the fit is real, we schedule a call and decide whether Pactum
           should take the engagement.
         </Text>
 
@@ -57,11 +57,41 @@ export default function Contact() {
                   {site.owner.name}
                 </Text>
               </Box>
-              <Button asChild colorPalette="pactum" borderRadius="full" w="fit-content">
-                <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
-                  Message on LinkedIn
-                </a>
-              </Button>
+              {site.email ? (
+                <Box>
+                  <Text color="ink.300" fontSize="sm" mb="1">
+                    Email
+                  </Text>
+                  <Text color="white" fontSize="lg">
+                    <a href={`mailto:${site.email}`}>{site.email}</a>
+                  </Text>
+                </Box>
+              ) : null}
+              <Stack direction={{ base: "column", sm: "row" }} gap="3">
+                {site.bookingUrl ? (
+                  <Button asChild colorPalette="pactum" borderRadius="full" w="fit-content">
+                    <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
+                      Book an intro call
+                    </a>
+                  </Button>
+                ) : null}
+                {site.email ? (
+                  <Button
+                    asChild
+                    colorPalette="pactum"
+                    variant={site.bookingUrl ? "outline" : "solid"}
+                    borderRadius="full"
+                    w="fit-content"
+                  >
+                    <a href={`mailto:${site.email}`}>Email me</a>
+                  </Button>
+                ) : null}
+                <Button asChild variant="outline" borderRadius="full" w="fit-content" color="white" borderColor="whiteAlpha.300">
+                  <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
+                    Message on LinkedIn
+                  </a>
+                </Button>
+              </Stack>
             </Stack>
           </Box>
 

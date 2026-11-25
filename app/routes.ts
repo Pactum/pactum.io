@@ -16,4 +16,5 @@ export default [
   route("sitemap.xml", "routes/sitemap[.]xml.ts"),
   route("robots.txt", "routes/robots[.]txt.ts"),
   route("llms.txt", "routes/llms[.]txt.ts"),
+  route(".well-known/security.txt", "routes/security[.]txt.ts"),
 ] satisfies RouteConfig;
