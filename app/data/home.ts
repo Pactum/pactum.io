@@ -8,32 +8,26 @@ export const showPlaceholders = import.meta.env.DEV;
 
 export const hero = {
   eyebrow: "Practical AI and cloud engineering",
-  titleTop: "Practical AI,",
-  titleBottom: "built by an engineer who ships.",
-  body: "I'm Matthew Swezey, a principal engineer building software since 2013. I help small businesses, nonprofits, and product teams put AI to work: automating busy work, building custom tools and agents, and training people to use AI well. Underneath is the AWS and DevOps experience to keep it all running.",
-  highlights: [
-    "Engineering since 2013",
-    "Listen first, plain language",
-    "AWS and DevOps under the hood",
-    "Projects, contracts, and workshops",
-  ],
+  titleTop: "I help businesses put AI",
+  titleBottom: "to work.",
+  body: "I'm Matthew Swezey, and I've been building software professionally since 2013. These days I work with small businesses, nonprofits, and product teams to automate the busy work, build custom AI tools and agents, and teach people how to use AI well. Most of my career has been spent on AWS and DevOps, so what I build is set up to keep running after I hand it over.",
 };
 
 export const engagements = [
   {
     label: "Assess",
     title: "AI and systems assessments",
-    body: "A focused look at your workflows, tools, or cloud estate. You get written findings and a prioritized plan, with the quick wins called out.",
+    body: "I take a focused look at your workflows, tools, or cloud setup. You get written findings and a prioritized plan, with the quick wins called out.",
   },
   {
     label: "Build",
     title: "Scoped project builds",
-    body: "A defined outcome delivered start to finish: an automation, a custom AI tool or agent, a SaaS foundation, or a migration.",
+    body: "I deliver a defined result from start to finish, whether that's an automation, a custom AI tool or agent, a SaaS foundation, or a migration.",
   },
   {
     label: "Train",
     title: "Workshops and coaching",
-    body: "Hands on sessions for owners, staff, and volunteers, built around your real tasks so the habits stick.",
+    body: "I run hands on sessions for owners, staff, and volunteers, built around your real tasks so the new habits actually stick.",
   },
   {
     label: "Embed",
@@ -45,34 +39,34 @@ export const engagements = [
 export const processSteps = [
   {
     title: "Intro call",
-    body: "We talk through the problem, the constraints, and the timeline. No deck required.",
+    body: "We talk through the problem, your constraints, and your timeline. You don't need to prepare anything.",
   },
   {
     title: "Written scope",
-    body: "You get deliverables and boundaries in writing before any work starts.",
+    body: "Before any work starts, you get the deliverables and boundaries in writing.",
   },
   {
-    title: "Build in the open",
-    body: "Work lands in your accounts, tools, and repos, so progress is always visible and you own the result.",
+    title: "The build",
+    body: "The work happens in your own accounts, tools, and repos, so you can check progress anytime and you own everything.",
   },
   {
     title: "Handoff",
-    body: "Plain language docs, a walkthrough with your team, and a system you can run, hire onto, or extend without me.",
+    body: "I write plain English docs and walk your team through it all, so you can run it, hire someone onto it, or extend it without me.",
   },
 ];
 
 export const principles = [
   {
-    title: "One engineer",
-    body: "No bait and switch staffing. Discovery, architecture, and implementation stay with the same person.",
+    title: "You work with me",
+    body: "The person who scopes your project is the same person who designs and builds it. Nobody gets swapped in after the sale.",
   },
   {
-    title: "Principal level execution",
-    body: "I take the work a staff or principal engineer would take, then I write the code and leave the system operable.",
+    title: "Senior experience",
+    body: "I take on the kind of work a staff or principal engineer would, and then I write the code myself and leave you with a system you can run.",
   },
   {
-    title: "Handoff by default",
-    body: "You should be able to run, hire onto, or sunset what I build. Docs and boundaries are part of the delivery.",
+    title: "Built to hand off",
+    body: "You should be able to run what I build, hire someone onto it, or shut it down. Documentation is part of every project, not an extra.",
   },
 ];
 
@@ -108,5 +102,5 @@ export type ProofPoint = {
 export const proofPoints: ProofPoint[] = [
   { value: "~33%", label: "Lower support cost from an AI support assistant I built at a post Series D startup" },
   { value: "~$1M", label: "Yearly savings from that same assistant" },
-  { value: "2013", label: "Writing software professionally since" },
+  { value: "2013", label: "The year I started writing software professionally" },
 ];

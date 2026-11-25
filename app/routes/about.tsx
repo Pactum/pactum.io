@@ -22,11 +22,11 @@ const facts = [
 ];
 
 const background = [
-  "Worked on site as a consultant for AEM BPM customers, deploying and customizing workflow solutions that automated human centric processes.",
-  "Built smart contracts and audited token sales for early crypto projects in 2018.",
-  "Built an AI support assistant on live backend data at a post Series D startup. It cut support cost by about 33%, roughly $1M a year.",
-  "Led Claude adoption across the development process at a nonprofit in the giving and donations space: code generation, code review, troubleshooting, and monitoring.",
-  "Coached professionals on using AI for workplace writing and market pay research.",
+  "I worked on site as a consultant for AEM BPM customers, deploying and customizing workflow systems that automated processes people had been doing by hand.",
+  "In 2018 I built smart contracts and audited token sales for early crypto projects.",
+  "At a post Series D startup, I built an AI support assistant that works on live backend data. It cut support costs by about 33%, which came to roughly $1M a year.",
+  "At a nonprofit in the giving and donations space, I introduced Claude and led its adoption across the development process, including code generation, code review, troubleshooting, and monitoring.",
+  "I've coached professionals on using AI to improve their writing at work and to research market pay.",
 ];
 
 export default function About() {
@@ -65,15 +65,15 @@ export default function About() {
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
               I'm a software engineer with more than a decade of experience building and running
               production systems. Pactum IO, LLC is the consulting practice I founded to work
-              directly with clients, and I scope, build, and support every engagement myself.
+              directly with clients, and I scope, build, and support every project myself.
             </Text>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              I hold a bachelor's degree in computer science with a minor in mathematics. Most of my
-              work runs on AWS, and my focus extends past application code into cloud architecture,
-              DevOps, infrastructure, and developer experience.
+              I have a bachelor's degree in computer science with a minor in mathematics. Most of my
+              work runs on AWS, and I care about a lot more than application code. I spend just as
+              much time on cloud architecture, DevOps, infrastructure, and developer experience.
             </Text>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              Selected experience:
+              A few things I've worked on:
             </Text>
             <Stack as="ul" gap="3" pl="0" m="0">
               {background.map((item) => (
@@ -86,9 +86,9 @@ export default function About() {
               ))}
             </Stack>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
-              Today I help small businesses, nonprofits, and product teams adopt AI where it saves
-              real time, and build the cloud systems that support it. If you have a project in mind,
-              I'd welcome a conversation.
+              These days I help small businesses, nonprofits, and product teams use AI where it saves
+              real time, and I build the cloud systems that support it. If you have a project in mind,
+              I'd be glad to talk.
             </Text>
             <Stack direction={{ base: "column", sm: "row" }} gap="3">
               <Button asChild colorPalette="pactum" borderRadius="full">
@@ -116,7 +116,7 @@ export default function About() {
 
         <CtaBand
           title="Want to work together?"
-          body="Send a few lines about what you are working on, and we can set up a call."
+          body="Send me a few lines about what you're working on and we can set up a call."
         />
       </Box>
     </>

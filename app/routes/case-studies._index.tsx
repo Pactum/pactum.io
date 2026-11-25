@@ -11,7 +11,7 @@ import type { Route } from "./+types/case-studies._index";
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
     title: "Case Studies",
-    description: `Selected work from ${site.name}: delivered systems, products, and consulting outcomes by ${site.owner.name}.`,
+    description: `Projects ${site.owner.name} has delivered through ${site.name}, from AI assistants and training to cloud, DevOps, and SaaS work.`,
     path: "/case-studies",
   });
 }
@@ -24,7 +24,7 @@ export default function CaseStudiesIndex() {
           "@context": "https://schema.org",
           "@type": "CollectionPage",
           name: `${site.name} case studies`,
-          description: `Delivered work and solutions from ${site.owner.name}.`,
+          description: `Projects delivered by ${site.owner.name} through ${site.name}.`,
           url: `${site.url}/case-studies`,
         }}
       />
@@ -41,11 +41,11 @@ export default function CaseStudiesIndex() {
           maxW="3xl"
           mb="6"
         >
-          Work that left the shop.
+          Projects I've worked on.
         </Heading>
         <Text color="ink.200" fontSize="xl" maxW="2xl" lineHeight="1.7" mb="14">
-          Briefs for shipped systems, rescues, and foundations. Slots are reserved by lane until
-          the write-ups are cleared to publish.
+          Here are short summaries of projects across the different kinds of work I do. I'll post
+          the full write ups here as each one is cleared for publication.
         </Text>
 
         <SimpleGrid columns={{ base: 1, md: 2 }} gap="6" alignItems="stretch">
@@ -86,7 +86,7 @@ export default function CaseStudiesIndex() {
                     alignItems="center"
                     gap="2"
                   >
-                    {study.status === "soon" ? "Write-up incoming" : "Read the study"}
+                    {study.status === "soon" ? "Write up coming soon" : "Read the study"}
                     <ArrowRight size={14} />
                   </Text>
                 </Box>

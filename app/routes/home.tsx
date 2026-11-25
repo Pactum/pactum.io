@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Grid, Heading, Image, Link, SimpleGrid, Stack, Text } from "@chakra-ui/react";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { ReactNode } from "react";
 import { Link as RouterLink } from "react-router";
 import { CtaBand } from "~/components/cta-band";
@@ -144,16 +144,6 @@ export default function Home() {
                 <RouterLink to="/services">See services</RouterLink>
               </Button>
             </Stack>
-            <Flex as="ul" wrap="wrap" columnGap="6" rowGap="2" pl="0" m="0">
-              {hero.highlights.map((item) => (
-                <Flex as="li" key={item} align="center" gap="2" color="ink.100" fontSize="sm" listStyleType="none">
-                  <Box color="pactum.500" display="inline-flex">
-                    <Check size={15} />
-                  </Box>
-                  {item}
-                </Flex>
-              ))}
-            </Flex>
           </Stack>
 
           <Box
@@ -258,7 +248,7 @@ export default function Home() {
                   <RouterLink to="/contact">Something else?</RouterLink>
                 </Link>
                 <Text color="ink.300" fontSize="xs" mt="1">
-                  Describe it and I will tell you if I can help
+                  Tell me about it and I'll let you know if I can help.
                 </Text>
               </Box>
             </SimpleGrid>
@@ -269,7 +259,7 @@ export default function Home() {
       <Section>
         <SectionHeader
           eyebrow="Ways to work together"
-          title="Pick the shape that fits the problem."
+          title="Pick whatever fits your situation."
         />
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap="6">
           {engagements.map((item) => (
@@ -290,9 +280,9 @@ export default function Home() {
 
       <Section>
         <SectionHeader
-          eyebrow="Proof"
-          title="Selected work."
-          body="Write ups are being cleared for publication. Ask on a call and I will walk you through the relevant ones."
+          eyebrow="Results"
+          title="Some of my recent work."
+          body="I'm still getting the full write ups cleared for publication. If you want details, ask on a call and I'll walk you through the ones that relate to your project."
         />
 
         {visibleProofPoints.length > 0 ? (
@@ -333,7 +323,7 @@ export default function Home() {
                     {study.summary}
                   </Text>
                   <Text color={study.status === "soon" ? "ink.300" : "pactum.400"} fontSize="xs" mt="4">
-                    {study.status === "soon" ? "Write up incoming" : "Read the study"}
+                    {study.status === "soon" ? "Write up coming soon" : "Read the study"}
                   </Text>
                 </Flex>
               </RouterLink>
@@ -384,14 +374,14 @@ export default function Home() {
           </Flex>
           <Link asChild color="pactum.500" fontSize="sm" flexShrink={0}>
             <RouterLink to="/technologies">
-              Full stack map <ArrowRight size={14} />
+              Everything I work with <ArrowRight size={14} />
             </RouterLink>
           </Link>
         </Flex>
       </Section>
 
       <Section>
-        <SectionHeader eyebrow="How it works" title="From first message to handoff." />
+        <SectionHeader eyebrow="How it works" title="Here's how a project usually goes." />
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} gap="6">
           {processSteps.map((step, index) => (
             <Box key={step.title} borderTopWidth="1px" borderColor="pactum.700" pt="6">
@@ -415,7 +405,7 @@ export default function Home() {
             Why Pactum
           </Text>
           <Heading as="h2" size={{ base: "2xl", md: "3xl" }} color="white">
-            A consulting LLC with one engineer on the other side of the table.
+            Pactum is a one person consulting company, and that person is me.
           </Heading>
         </Grid>
         <SimpleGrid columns={{ base: 1, md: 3 }} gap="6">
@@ -432,8 +422,8 @@ export default function Home() {
         </SimpleGrid>
 
         <CtaBand
-          title="Have busy work AI could take off your plate?"
-          body="Or a project to ship, or a contract role to fill. Send a few lines about what you are working on. If it looks like a fit, we set up a call and scope it together."
+          title="Have work you'd like AI to take off your plate?"
+          body="Or maybe you have a project to ship or a contract role to fill. Send me a few lines about what you're working on. If it looks like a good fit, we'll set up a call and scope it together."
         />
       </Section>
     </>

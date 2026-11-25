@@ -21,13 +21,13 @@ export function Footer() {
             </Text>
           </Flex>
           <Text color="ink.300" fontSize="sm" maxW="xs" lineHeight="1.7">
-            {site.legalName}. Practical AI and cloud engineering consulting operated by {site.owner.name}.
+            {site.legalName} is the AI and cloud engineering consulting practice of {site.owner.name}.
           </Text>
         </Stack>
 
         <Stack gap="3">
           <Text fontSize="xs" letterSpacing="0.16em" textTransform="uppercase" color="pactum.500">
-            Practice
+            Pages
           </Text>
           {navLinks.map((item) => (
             <Link key={item.to} asChild color="ink.200" _hover={{ color: "white" }} fontSize="sm">
@@ -90,7 +90,7 @@ export function Footer() {
           © {new Date().getFullYear()} {site.legalName}. All rights reserved.
         </Text>
         <Text color="ink.400" fontSize="xs">
-          Sole owner and operator: {site.owner.name}
+          Owned and operated by {site.owner.name}
         </Text>
       </Flex>
     </Box>
