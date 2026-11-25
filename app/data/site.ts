@@ -12,10 +12,11 @@ export const site = {
   contentUpdated: "2026-11-25",
   linkedin: "https://www.linkedin.com/in/swezey-matt/",
   github: "https://github.com/pactum",
-  // TODO(content): set these to turn on the direct contact buttons in the CTA band.
-  // Leave empty to hide them. Example: "https://cal.com/your-handle/intro"
+  // TODO(content): set bookingUrl to turn on the "Book an intro call" buttons on the
+  // CTA band and Contact page. Leave empty to hide them. Example: "https://cal.com/your-handle/intro"
+  // If the booking page is embedded rather than linked, update the CSP in app/entry.server.tsx.
   bookingUrl: "" as string,
-  email: "" as string,
+  email: "matt@pactum.io" as string,
   locale: "en_US",
   owner: {
     name: "Matthew Swezey",

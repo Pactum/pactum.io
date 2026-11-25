@@ -83,7 +83,18 @@ export function organizationJsonLd() {
     logo: new URL("/logo.png", site.url).toString(),
     description: site.description,
     slogan: site.tagline,
-    ...(site.email ? { email: site.email } : {}),
+    ...(site.email
+      ? {
+          email: site.email,
+          contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "sales",
+            email: site.email,
+            url: `${site.url}/contact`,
+            availableLanguage: "English",
+          },
+        }
+      : {}),
     founder: { "@id": personId },
     employee: { "@id": personId },
     areaServed: "Worldwide",

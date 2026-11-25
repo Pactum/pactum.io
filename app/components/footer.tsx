@@ -60,6 +60,11 @@ export function Footer() {
           <Link asChild color="ink.200" _hover={{ color: "white" }} fontSize="sm">
             <RouterLink to="/contact">Start a conversation</RouterLink>
           </Link>
+          {site.email ? (
+            <Link href={`mailto:${site.email}`} color="ink.200" _hover={{ color: "white" }} fontSize="sm">
+              {site.email}
+            </Link>
+          ) : null}
           <Link href={site.linkedin} target="_blank" rel="noopener noreferrer" color="ink.200" _hover={{ color: "white" }} fontSize="sm">
             LinkedIn
           </Link>
