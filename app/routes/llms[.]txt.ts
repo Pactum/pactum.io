@@ -23,7 +23,8 @@ ${hero.body}
 - Principal: ${site.owner.name}, ${site.owner.role}
 - Building production software since 2013, consulting through Pactum IO since 2017
 - More than five years at a post Series D startup, most recently as tech lead of its B2B dashboard and billing platform
-- Co-founder and CTO of SubTrack, an AI construction management platform
+- Co-founder and CTO of SubTrack, a bootstrapped AI construction management platform
+- Smart contract work for Validity Labs and head of development at ShiftNrg
 - Speaker at DevCon3 and SXSW
 - Main cloud: AWS
 - Engagements: assessments, scoped project builds, workshops and coaching, and contract principal engineering

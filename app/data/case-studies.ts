@@ -69,7 +69,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Smart contracts for token sales",
     lane: "Blockchain / Crypto",
     status: "soon",
-    summary: "During the 2017 ICO boom I built and secured smart contracts that held more than $30M in digital assets, and I audited contracts for other Ethereum projects.",
+    summary: "During the 2017 ICO boom I built and secured smart contracts that held more than $30M in digital assets, and I audited contracts for other Ethereum projects with Validity Labs.",
   },
 ];
 

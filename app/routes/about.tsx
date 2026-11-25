@@ -34,7 +34,7 @@ const experience: Role[] = [
     years: "2025 to now",
     title: "Co-founder and CTO",
     where: "SubTrack",
-    body: "SubTrack is an AI construction management platform that turns messy project data into reports and billing that contractors can actually use.",
+    body: "SubTrack is a bootstrapped startup I run with my co-founders, Will and Jeandre. We're building an AI construction management platform that turns messy project data into reports and billing that contractors can actually use.",
   },
   {
     years: "2020 to 2025",
@@ -45,8 +45,8 @@ const experience: Role[] = [
   {
     years: "2017 to 2021",
     title: "Smart contract engineer and head of development",
-    where: "Pactum IO clients",
-    body: "During the 2017 ICO boom I built and secured smart contracts that held more than $30M in digital assets, and I audited contracts for other Ethereum projects as an embedded senior engineer. I later led development for a crypto startup, from contracts through backend services and AWS infrastructure.",
+    where: "Validity Labs, ShiftNrg, and other Pactum IO clients",
+    body: "During the 2017 ICO boom I built and secured smart contracts that held more than $30M in digital assets. At Validity Labs I worked as an embedded senior engineer on smart contract architecture and audits for major Ethereum projects. I later served as head of development at ShiftNrg, where I led everything from the contracts to the backend services and AWS infrastructure.",
   },
   {
     years: "2013 to 2017",
@@ -92,7 +92,7 @@ export default function About() {
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
               I'm a principal engineer based in Austin, and I've been building production software
               since 2013. I founded Pactum IO in 2017. Since then I've worked as an independent
-              consultant, a head of development, and for more than five years at a post Series D
+              consultant, head of development at ShiftNrg, and for more than five years at a post Series D
               startup, where I became tech lead of one of its core platforms.
             </Text>
             <Text color="ink.200" fontSize="lg" lineHeight="1.8">
