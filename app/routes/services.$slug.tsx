@@ -26,7 +26,7 @@ export function meta({ loaderData }: Route.MetaArgs) {
   const { service } = loaderData;
   return pageMeta({
     title: service.title,
-    description: `${service.short} ${service.title} consulting from ${site.owner.name}, Pactum IO.`,
+    description: `${service.short} ${service.title} consulting from ${site.owner.name} at Pactum IO.`,
     path: `/services/${service.slug}`,
   });
 }
@@ -70,13 +70,13 @@ export default function ServiceDetail({ loaderData }: Route.ComponentProps) {
           {service.summary}
         </Text>
         <Button asChild colorPalette="pactum" borderRadius="full" mb="16">
-          <RouterLink to="/contact">Discuss this work</RouterLink>
+          <RouterLink to="/contact">Talk to me about this</RouterLink>
         </Button>
 
         <SimpleGrid columns={{ base: 1, lg: 2 }} gap="8" mb="12">
           <Box borderWidth="1px" borderColor="whiteAlpha.100" borderRadius="2xl" p={{ base: 6, md: 8 }} bg="ink.800">
             <Heading as="h2" size="lg" color="white" mb="4">
-              The usual failure
+              What usually goes wrong
             </Heading>
             <Text color="ink.200" lineHeight="1.8">
               {service.problem}
@@ -84,7 +84,7 @@ export default function ServiceDetail({ loaderData }: Route.ComponentProps) {
           </Box>
           <Box borderWidth="1px" borderColor="whiteAlpha.100" borderRadius="2xl" p={{ base: 6, md: 8 }}>
             <Heading as="h2" size="lg" color="white" mb="4">
-              How I take it
+              How I approach it
             </Heading>
             <Text color="ink.200" lineHeight="1.8">
               {service.approach}
@@ -95,7 +95,7 @@ export default function ServiceDetail({ loaderData }: Route.ComponentProps) {
         <SimpleGrid columns={{ base: 1, lg: 2 }} gap="8">
           <Box>
             <Heading as="h2" size="lg" color="white" mb="5">
-              What you leave with
+              What you get
             </Heading>
             <Stack gap="3">
               {service.outcomes.map((item) => (
@@ -110,7 +110,7 @@ export default function ServiceDetail({ loaderData }: Route.ComponentProps) {
           </Box>
           <Box>
             <Heading as="h2" size="lg" color="white" mb="5">
-              Typical engagements
+              Typical projects
             </Heading>
             <Stack gap="3">
               {service.engagements.map((item) => (
@@ -127,7 +127,7 @@ export default function ServiceDetail({ loaderData }: Route.ComponentProps) {
 
         <Box mt="16">
           <Heading as="h2" size="lg" color="white" mb="6">
-            Other lanes
+            Other services
           </Heading>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap="4">
             {others.map((item) => (

@@ -17,7 +17,7 @@ export const websiteId = `${site.url}/#website`;
 
 const OG_IMAGE_WIDTH = "1200";
 const OG_IMAGE_HEIGHT = "630";
-const OG_IMAGE_ALT = `${site.name}: practical AI built by an engineer who ships. ${site.owner.name}.`;
+const OG_IMAGE_ALT = `${site.name}, the AI and cloud engineering practice of ${site.owner.name}.`;
 
 export function pageMeta({
   title,

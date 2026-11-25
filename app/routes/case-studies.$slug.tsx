@@ -67,11 +67,11 @@ export default function CaseStudyDetail({ loaderData }: Route.ComponentProps) {
             Status
           </Text>
           <Heading as="h2" size="lg" color="white" mb="3">
-            Write-up incoming
+            Write up coming soon
           </Heading>
           <Text color="ink.200" lineHeight="1.8">
-            This slot is reserved. The public brief (problem, approach, and what shipped) will land
-            here once the work can be named.
+            I'm working on a full write up that covers the problem, how I approached it, and what
+            shipped. It will go up here once I'm cleared to share the details.
           </Text>
         </Box>
         <Button asChild variant="outline" borderRadius="full" color="white" borderColor="whiteAlpha.300" mb="8">

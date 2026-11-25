@@ -10,7 +10,7 @@ import type { Route } from "./+types/services._index";
 export function meta({}: Route.MetaArgs) {
   return pageMeta({
     title: "Services",
-    description: `${site.name} services: AI implementation, workflow automation, AI tools and agents, and AI training, backed by AWS cloud, DevOps, and full stack engineering.`,
+    description: `Services from ${site.name}: AI implementation, workflow automation, custom AI tools and agents, and AI training, plus AWS cloud, DevOps, and full stack engineering.`,
     path: "/services",
   });
 }
@@ -32,11 +32,12 @@ export default function ServicesIndex() {
           maxW="3xl"
           mb="6"
         >
-          Practical AI, solid engineering. One engineer.
+          Here's what I can help with.
         </Heading>
         <Text color="ink.200" fontSize="xl" maxW="2xl" lineHeight="1.7" mb="16">
-          Each engagement is scoped to the problem, then delivered by {site.owner.name}. Start with
-          AI if you want hours back. Start with engineering if you need a system built or rescued.
+          I scope every project around the problem and do the work myself. If you want to get hours
+          back each week, start with the AI services. If you need a system built or rescued, start
+          with engineering.
         </Text>
 
         {serviceGroups.map((group) => (
@@ -84,7 +85,7 @@ export default function ServicesIndex() {
                         {service.short}
                       </Text>
                       <Text color="pactum.400" fontSize="sm" display="inline-flex" alignItems="center" gap="2">
-                        Read the brief <ArrowRight size={14} />
+                        Learn more <ArrowRight size={14} />
                       </Text>
                     </Box>
                   </RouterLink>

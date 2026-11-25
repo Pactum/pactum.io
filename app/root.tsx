@@ -54,7 +54,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
     title = error.status === 404 ? "Page not found" : `Error ${error.status}`;
     details =
       error.status === 404
-        ? "That page is not part of the Pactum practice."
+        ? "I couldn't find that page."
         : error.statusText || details;
   } else if (import.meta.env.DEV && error instanceof Error) {
     details = error.message;

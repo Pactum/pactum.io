@@ -8,8 +8,8 @@ type CtaBandProps = {
 };
 
 export function CtaBand({
-  title = "If the work is real, I will take it.",
-  body = `Pactum is a one-person practice. You work with ${site.owner.name}, not a bench that gets swapped after the pitch.`,
+  title = "Let's talk about your project.",
+  body = "Pactum is just me, so you'll work directly with me from the first call through the handoff.",
 }: CtaBandProps) {
   return (
     <Box
