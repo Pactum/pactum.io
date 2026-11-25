@@ -34,7 +34,7 @@ const experience: Role[] = [
     years: "2025 to now",
     title: "Co-founder and CTO",
     where: "SubTrack",
-    body: "SubTrack is a bootstrapped startup I run with my co-founders, Will and Jeandre. We're building an AI construction management platform that turns messy project data into reports and billing that contractors can actually use.",
+    body: "SubTrack is a bootstrapped startup I run with my co-founders, Will and Jeandre. We're building an AI construction management platform that turns messy project data into reports and billing that contractors can actually use. The platform has already tracked more than $3M in daily tickets (LEMs).",
   },
   {
     years: "2020 to 2025",
